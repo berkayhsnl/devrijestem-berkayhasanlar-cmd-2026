@@ -1,0 +1,297 @@
+/* Lettertypes */
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../fonts/SpecialElite-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
+
+
+
+/* Algemene pagina en tekst */
+
+body {
+    background-color: #f4efdf;
+    color: #191919;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 48px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+article h1 {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+figcaption {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* Krantkop en navigatie */
+
+.krant-info {
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.krant-naam {
+    font-family: 'Special Elite', cursive;
+    font-size: 85px;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a61919;
+    text-decoration: underline;
+}
+
+nav a.actief {
+    color: #a61919;
+    text-decoration: underline;
+}
+
+
+
+/* Voettekst */
+
+footer {
+    font-family: 'IBM Plex Mono', monospace;
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 35px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+
+/* Artikelen en kolommen */
+
+.krant-kolommen {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid #777;
+    text-align: justify;
+}
+
+.krant-kolommen p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.krant-artikel {
+    border-bottom: 1px solid #777;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.krant-artikel h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.krant-onderdeel {
+    margin: 25px 0;
+    padding: 10px 0;
+}
+
+.krant-indeling {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.krant-indeling .krant-afbeelding {
+    width: 55%;
+    margin: 0;
+}
+
+.krant-indeling .krant-tekst {
+    width: 45%;
+}
+
+.uitleg-intro .krant-afbeelding {
+    width: 45%;
+}
+
+.uitleg-intro .krant-tekst {
+    width: 55%;
+}
+
+.uitleg-intro p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+/* Afbeeldingen */
+
+.hoofdafbeelding {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+}
+
+img[src="images/boeken_informatie_vrijheid.png"] {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+img[src="images/wereldkaart_censuur.png"] {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.krant-afbeelding:has(img[src="images/wereldkaart_censuur.png"]) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+img[src="images/krant_en_computer.png"] {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+img[src="images/toegang_geblokkeerd_computer.png"] {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.krant-indeling img[src="images/krant_en_computer.png"] {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.censuur-beeld {
+    margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.censuur-beeld img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Bronnen en afsluitende vraag */
+
+.bronnen section {
+    border-bottom: 1px solid #777;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.bronnen h3, .bronnen h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.laatste-vraag {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+
+/* Blur-interactie bij DNS en IP */
+
+.blur-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.blur-tekst {
+    display: inline-block;
+    filter: blur(2px);
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.blur-checkbox:checked + .blur-tekst {
+    filter: blur(0);
+}

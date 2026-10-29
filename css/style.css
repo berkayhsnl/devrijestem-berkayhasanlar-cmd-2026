@@ -135,7 +135,7 @@ footer p {
     column-count: 2;
     column-gap: 40px;
     column-rule: 1px solid #777;
-    text-align: justify;
+    text-align: left;
 }
 
 .krant-kolommen p {
@@ -195,43 +195,34 @@ footer p {
 
 .hoofdafbeelding {
     display: block;
-    width: 80%;
+    width: 100%;
+    max-width: 880px;
     height: auto;
     margin: 30px auto;
 }
 
-img[src="images/boeken_informatie_vrijheid.png"] {
+img[src="images/boeken.png"] {
+    display: block;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
 }
 
-img[src="images/wereldkaart_censuur.png"] {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
 
-.krant-afbeelding:has(img[src="images/wereldkaart_censuur.png"]) {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-img[src="images/krant_en_computer.png"] {
+img[src="images/krant.jpg"] {
     width: 60%;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
 }
 
-img[src="images/toegang_geblokkeerd_computer.png"] {
+img[src="images/computer.jpg"] {
     width: 60%;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
 }
 
-.krant-indeling img[src="images/krant_en_computer.png"] {
+.krant-indeling img[src="images/krant.jpg"] {
     width: 100%;
     height: auto;
     margin: 0;
